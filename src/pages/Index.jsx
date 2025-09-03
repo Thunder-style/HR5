@@ -299,9 +299,7 @@ const ExpertFeedbackReport = () => {
                     ]}
                     labelFormatter={(label) => {
                       const item = divergingBarData.data.find(d => d.dimension === label);
-                      return `${label}
-起始分数：${item.startValue}分
-结束分数：${item.endValue}分`;
+                      return `${label}`;
                     }}
                   />
                   <ReferenceLine x={0} stroke="#666" strokeDasharray="3 3" />
